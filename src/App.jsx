@@ -140,7 +140,7 @@ function App() {
                       product.images.length
                     )
                   }
-                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white px-2 py-1 rounded"
+                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-white px-2 py-1 rounded cursor-pointer"
                 >
                   ◀
                 </button>}
@@ -152,7 +152,7 @@ function App() {
                       product.images.length
                     )
                   }
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white px-2 py-1 rounded"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white px-2 py-1 rounded cursor-pointer"
                 >
                   ▶
                 </button>}
