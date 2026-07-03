@@ -171,6 +171,12 @@ function App() {
                   ? "In Stock"
                   : "Out of Stock"}
               </span>
+
+              <div className="flex gap-2">
+                {product.tags.map((tag) => (
+                  <span className="text-black-400 bg-gray-200 p-2 rounded-lg">{tag}</span>
+                ))}
+              </div>
             </div>
           );
         })}
