@@ -106,12 +106,12 @@ function App() {
   }, [products, loading, hasMore]);
 
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="mx-4">
       <h1 className="text-3xl font-bold my-6">
         Infinite Scroll (IntersectionObserver)
       </h1>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
         {products.map((product) => {
           const currentIndex =
             currentImages[product.id] ?? 0;
