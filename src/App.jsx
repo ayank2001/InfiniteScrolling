@@ -120,8 +120,12 @@ function App() {
           return (
             <div
               key={product.id}
-              className="border p-4 rounded"
+              className="border p-4 rounded flex flex-col gap-4"
             >
+              <h3 className="font-bold mt-2 text-2xl">
+                {product.title}
+              </h3>
+
               <div className="relative">
                 <img
                   src={product.images[currentIndex]}
@@ -154,9 +158,12 @@ function App() {
                 </button>}
               </div>
 
-              <h3 className="font-bold mt-3">
-                {product.title}
-              </h3>
+              <div className="flex gap-2">
+                {product.tags.map((tag) => (
+                  <span className="text-black-400 bg-gray-200 p-2 rounded-lg text-xs">{tag}</span>
+                ))}
+              </div>
+
 
               <p>{product.description}</p>
 
@@ -172,11 +179,6 @@ function App() {
                   : "Out of Stock"}
               </span>
 
-              <div className="flex gap-2">
-                {product.tags.map((tag) => (
-                  <span className="text-black-400 bg-gray-200 p-2 rounded-lg">{tag}</span>
-                ))}
-              </div>
             </div>
           );
         })}
