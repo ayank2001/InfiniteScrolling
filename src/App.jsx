@@ -116,6 +116,7 @@ function App() {
           const currentIndex =
             currentImages[product.id] ?? 0;
 
+
           return (
             <div
               key={product.id}
