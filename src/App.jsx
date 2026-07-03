@@ -108,7 +108,7 @@ function App() {
   return (
     <div className="w-[80%] mx-auto">
       <h1 className="text-3xl font-bold my-6">
-        Infinite Scroll
+        Infinite Scroll (IntersectionObserver)
       </h1>
 
       <div className="grid grid-cols-3 gap-4">
